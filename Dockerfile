@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r backend/requirements.txt
 EXPOSE 8000
 
 # Run backend
-CMD ["python", "backend/app.py"]
+CMD ["python", "backend/main.py"]
