@@ -5,13 +5,13 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy backend code
-COPY backend/ ./backend
+COPY backend /app
 
 # Install dependencies
-RUN pip install --no-cache-dir -r backend/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose backend port
 EXPOSE 8000
 
 # Run backend
-CMD ["python", "backend/main.py"]
+CMD ["python", "main.py"]
